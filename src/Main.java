@@ -5,12 +5,16 @@ public class Main {
 
         int[] numbers = new int[]{4,2,6,1,3,5,7};
 
-        divide(numbers, 0, numbers.length-1);
+        quicksort(numbers);
 
         for(int i = 0; i < numbers.length; i++){
             System.out.print(numbers[i]);
         }
 
+    }
+
+    static void quicksort(int[]arr){
+        divide(arr, 0, arr.length-1);
     }
 
     static void divide(int[] arr, int start, int end){
